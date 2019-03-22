@@ -53,5 +53,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *segueIdentifier = @"";
+    if (indexPath.row == 0) {
+        segueIdentifier = @"goToRuntimeVC";
+    }
+    else {
+        segueIdentifier = @"goToFishhookVC";
+    }
+    [self performSegueWithIdentifier:segueIdentifier sender:nil];
 }
 @end
