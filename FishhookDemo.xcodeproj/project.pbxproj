@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F709E3332244F2AB00DE296C /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = F709E3312244F2AB00DE296C /* fishhook.c */; };
 		F788FBCC2243A19200F5F2AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F788FBCB2243A19200F5F2AA /* AppDelegate.m */; };
 		F788FBCF2243A19200F5F2AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F788FBCE2243A19200F5F2AA /* ViewController.m */; };
 		F788FBD22243A19200F5F2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F788FBD02243A19200F5F2AA /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F709E3312244F2AB00DE296C /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		F709E3322244F2AB00DE296C /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		F788FBC72243A19200F5F2AA /* FishhookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishhookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F788FBCA2243A19200F5F2AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F788FBCB2243A19200F5F2AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 		F788FBC92243A19200F5F2AA /* FishhookDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F709E3312244F2AB00DE296C /* fishhook.c */,
+				F709E3322244F2AB00DE296C /* fishhook.h */,
 				F788FBCA2243A19200F5F2AA /* AppDelegate.h */,
 				F788FBCB2243A19200F5F2AA /* AppDelegate.m */,
 				F788FBCD2243A19200F5F2AA /* ViewController.h */,
@@ -276,6 +281,7 @@
 				F788FBDA2243A19300F5F2AA /* main.m in Sources */,
 				F788FC012243A4C200F5F2AA /* FishhookVC.m in Sources */,
 				F788FBCC2243A19200F5F2AA /* AppDelegate.m in Sources */,
+				F709E3332244F2AB00DE296C /* fishhook.c in Sources */,
 				F788FBFE2243A4B300F5F2AA /* RuntimeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
