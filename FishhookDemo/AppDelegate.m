@@ -14,11 +14,24 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSLog(@"application");
+    NSLog(@"application2");
+    printf("application3");
+    printf("application4");
+    [self mylog];
+    [self mylog2];
     return YES;
 }
+
+- (void)mylog{
+    NSLog(@"mylog");
+}
+
+- (void)mylog2{
+    NSLog(@"mylog");
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
