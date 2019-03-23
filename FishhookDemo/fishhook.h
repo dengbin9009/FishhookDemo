@@ -42,9 +42,9 @@ extern "C" {
  * name to its replacement
  */
 struct rebinding {
-  const char *name;
-  void *replacement;
-  void **replaced;
+  const char *name;      // 需要替换的函数名
+  void *replacement;     // 新函数的指针
+  void **replaced;       // 老函数的新指针
 };
 
 /*

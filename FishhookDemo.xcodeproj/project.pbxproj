@@ -110,8 +110,8 @@
 		F788FBC92243A19200F5F2AA /* FishhookDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F709E3312244F2AB00DE296C /* fishhook.c */,
 				F709E3322244F2AB00DE296C /* fishhook.h */,
+				F709E3312244F2AB00DE296C /* fishhook.c */,
 				F788FBCA2243A19200F5F2AA /* AppDelegate.h */,
 				F788FBCB2243A19200F5F2AA /* AppDelegate.m */,
 				F788FBCD2243A19200F5F2AA /* ViewController.h */,
