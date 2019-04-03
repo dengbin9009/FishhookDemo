@@ -186,6 +186,13 @@ static void rebind_symbols_for_image(struct rebindings_entry *rebindings,
     
     // Find base symbol/string table addresses
     // 找到linkedit的头地址
+    // linkedit_base其实就是MachO的头地址！！！可以通过查看linkedit_base值和image list命令查看验证！！！
+    /**********************************************************
+     Linkedit虚拟地址 = PAGEZERO(64位下1G) + FileOffset
+     MachO地址 = PAGEZERO + ASLR
+     上面两个公式是已知的 得到下面这个公式
+     MachO文件地址 = Linkedit虚拟地址 - FileOffset + ASLR(slide)
+     **********************************************************/
     uintptr_t linkedit_base = (uintptr_t)slide + linkedit_segment->vmaddr - linkedit_segment->fileoff;
     // 获取symbol_table的真实地址
     nlist_t *symtab = (nlist_t *)(linkedit_base + symtab_cmd->symoff);
